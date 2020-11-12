@@ -26,9 +26,9 @@ if(object1.width / 2 + object2.width / 2 > object1.x - object2.x
 }
 
 function hasCollided(object1,object2){
-  bulletRightEdge = object1.x + object1.width;
-  wallLeftEdge = object2.x;
-  if(bulletRightEdge>=wallLeftEdge){
+  object1RightEdge = object1.x + object1.width;
+  object2LeftEdge = object2.x;
+  if(object1RightEdge>=object2LeftEdge){
       return true;
     }
     else {
